@@ -1,0 +1,43 @@
+# ✅ Checklist de Démarrage Backend
+
+## Avant de Commencer
+- [ ] Cloner la template : `git clone <url> mon-projet`
+- [ ] Se déplacer dans le dossier : `cd mon-projet`
+- [ ] Lancer le script d'init : `node init-project.js`
+
+## Configuration Initiale
+- [ ] Configurer les variables dans `.env`
+- [ ] Vérifier que MongoDB est installé et démarré
+- [ ] Installer les dépendances : `npm install`
+
+## Développement
+- [ ] Lancer en dev : `npm run dev`
+- [ ] Tester l'authentification : 
+  - POST `/api/auth/register`
+  - POST `/api/auth/login`
+- [ ] Vérifier les logs dans la console
+
+## Ajouter une Nouvelle Ressource
+- [ ] Créer le modèle dans `models/`
+- [ ] Créer le contrôleur dans `controllers/`
+- [ ] Créer les validateurs dans `validators/`
+- [ ] Créer les routes dans `routes/`
+- [ ] Ajouter la route dans `index.js`
+- [ ] Écrire les tests dans `tests/`
+
+## Avant le Commit
+- [ ] Lancer les tests : `npm test`
+- [ ] Vérifier le linting (si configuré)
+- [ ] Mettre à jour la documentation si nécessaire
+
+## Déploiement
+- [ ] Configurer les variables d'environnement de production
+- [ ] Tester en mode production : `NODE_ENV=production npm start`
+- [ ] Configurer le monitoring (logs, alertes)
+- [ ] Mettre en place les backups de la base de données
+
+## Sécurité
+- [ ] Changer le JWT_SECRET en production
+- [ ] Configurer CORS pour les origines autorisées
+- [ ] Vérifier les headers de sécurité
+- [ ] Mettre à jour les dépendances régulièrement
